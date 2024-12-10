@@ -10,7 +10,7 @@ public class Main {
         System.out.println(theFountainhead.getTitle()+ " " +theFountainhead.getPublishingYear());
         System.out.println(theMysteriousIsland.getTitle()+ " " +theMysteriousIsland.getPublishingYear());
 
-        theFountainhead.setPublishingYear(1955);
+        theFountainhead.setPublishingYear(1945);
         System.out.println(theFountainhead.getTitle()+ " " +theFountainhead.getPublishingYear());
 
 
