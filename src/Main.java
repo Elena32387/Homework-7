@@ -2,9 +2,16 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    Author rand = new Author("Айн", "Рэнд");
+    Author verne = new Author("Жюль", "Верн");
+    Book theFountainhead = new Book("Источник", rand, 1943);
+    Book theMysteriousIsland = new Book("Таинственный остров", verne, 1874);
+
+        System.out.println(theFountainhead.getTitle()+ " " +theFountainhead.getPublishingYear());
+        System.out.println(theMysteriousIsland.getTitle()+ " " +theMysteriousIsland.getPublishingYear());
+
+        theFountainhead.setPublishingYear(1955);
+        System.out.println(theFountainhead.getTitle()+ " " +theFountainhead.getPublishingYear());
 
 
     }
